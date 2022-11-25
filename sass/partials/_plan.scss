@@ -1,0 +1,46 @@
+.plan{
+    background: linear-gradient(0deg, #3D248A, #3D248A);
+    padding: 59px 0 0 0;
+    &__title{
+        color: $white;
+        font-weight: 300;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+    &__cards{
+        margin-bottom: 65px;
+        .item1{
+            color: #7FF7FF;
+        }
+        .item2{
+            color: #FFC700;
+        }
+        .item3{
+            color: #FF5784;
+        }
+        .card__btn{
+            display: block;
+            padding: 15px 22px;
+            background: #00F0FF;
+            border-radius: 90px;
+            color: #3D248A;
+            margin-bottom: 18px;
+            .item1{
+                background: #7FF7FF;
+            }
+            .item2{
+                background: #FFC700;
+            }
+            .item3{
+                background: #FF5784;
+            }
+        }
+        .card__subtext{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 30px;
+            color: #8D8D8D;
+            margin-bottom: 40px;
+        }
+    }
+}

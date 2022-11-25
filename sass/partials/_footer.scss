@@ -1,0 +1,130 @@
+.footer {
+	@include box;
+	padding: 76px 0 91px 0;
+	background: #3D248A;
+	position: relative;
+	@media (max-width: 1279px){
+		padding: 50px 0 ;
+	}
+	section{
+		overflow: visible;
+	}
+	.layout{
+		overflow: visible;
+		z-index: 2;
+	}
+	&__triagle1{
+		border-top: 50px solid #00D5FF;
+		border-left: 30px solid transparent;
+		border-right: 20px solid transparent;
+		position: absolute;
+		top: 100px;
+		right: 600px;
+		z-index: 1;
+	}
+	&__triagle2{
+		border-top: 30px solid #FF5784;
+		border-left: 10px solid transparent;
+		border-right: 13px solid transparent;
+		position: absolute;
+		bottom: 80px;
+		left: 600px;
+		z-index: 1;
+		transform: rotate(-33deg);
+	}
+	&__triagle3{
+		border-top: 20px solid #FFC700;
+		border-left: 5px solid transparent;
+		border-right: 10px solid transparent;
+		position: absolute;
+		bottom: 50px;
+		left:50%;
+		z-index: 1;
+		transform: rotate(-45deg);
+	}
+	&__triagle4{
+		border-top: 20px solid #FFC700;
+		border-left: 5px solid transparent;
+		border-right: 10px solid transparent;
+		position: absolute;
+		bottom: 89px;
+		left:60%;
+		z-index: 1;
+		transform: rotate(54deg);
+	}
+	&__triagle5{
+		border-top: 120px solid #FFC700;
+		border-left: 55px solid transparent;
+		border-right: 80px solid transparent;
+		position: absolute;
+		bottom: 140px;
+		right: 30%;
+		z-index: 1;
+		transform: rotate(54deg);
+	}
+	&__wrap{
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 767px){
+			flex-wrap: wrap;
+		}
+	}
+	&__list{
+		display: flex;
+		@media (max-width: 767px){
+			width: 100%;
+			justify-content: space-around;
+		}
+		@media (max-width: 530px){
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__item{
+		margin-right: 94px;
+		position: relative;
+		@media (max-width: 767px){
+			margin-right: 0;
+		}
+		&.item1::after{
+			content: '';
+			display: block;
+			width: 9px;
+			height: 24px;
+			background: #FF5784;
+			position: absolute;
+			top: 0;
+			left: -15px;
+		}
+		&.item2::after{
+			content: '';
+			display: block;
+			width: 9px;
+			height: 24px;
+			background: #FFC700;
+			position: absolute;
+			top: 0;
+			left: -15px;
+		}
+		&.item3::after{
+			content: '';
+			display: block;
+			width: 9px;
+			height: 24px;
+			background: #00D5FF;
+			position: absolute;
+			top: 0;
+			left: -15px;
+		}
+		a{
+			display: block;
+			color: $white;
+			margin-bottom: 20px;
+		}
+	}
+	&__logo{
+		@media (max-width: 767px){
+			margin: 0 auto;
+		}
+	}
+}

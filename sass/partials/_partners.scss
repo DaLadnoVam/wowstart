@@ -1,0 +1,50 @@
+.partners{
+    padding: 52px 0 71px 0;
+    @media (max-width: 1023px){
+        padding: 30px 0;
+    }
+    &__title{
+        text-align: center;
+        position: relative;
+        span{
+            position: relative;
+            z-index: 2;
+            background: $white;
+            padding: 0 70px;
+            @media (max-width: 1023px){
+                padding: 0 30px;
+            }
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #BBBBBB;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width: 1023px){
+            flex-wrap: wrap;
+        }
+    }
+    &__item{
+        width: 340px;
+        .img__wrap{
+            height: 108px;
+            display: grid;
+            place-content: center;
+        }
+        img{
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+}

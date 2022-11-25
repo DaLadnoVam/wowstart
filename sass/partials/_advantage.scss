@@ -1,0 +1,61 @@
+.advantage{
+    padding: 26px 0 149px 0;
+    @media (max-width: 1023px){
+        padding: 20px 0 100px 0; 
+    }
+    @media (max-width: 767px){
+        padding: 20px 0; 
+    }
+    &__title{
+        margin-bottom: 51px;
+        position: relative;
+        margin-left: 26px;
+        @media (max-width: 1279px){
+            margin-bottom: 40px;
+        }
+        @media (max-width: 767px){
+            margin-bottom: 20px;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 14px;
+            height: 100%;
+            background: #FFC700;
+            position: absolute;
+            top: 0;
+            left: -26px;
+            @media (max-width: 767px){
+                left: -20px;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 1279px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__item{
+        width: 300px;
+        text-align: center;
+        @media (max-width: 1279px){
+            width: 50%;
+            padding: 10px;
+        }
+        @media (max-width: 1279px){
+            width: 100%;
+        }
+        h3{
+            min-height: 200px;
+            @media (max-width: 1279px){
+                min-height: 100px;
+            }
+            @media (max-width: 767px){
+                min-height: 50px;
+            }
+        }
+    }
+}

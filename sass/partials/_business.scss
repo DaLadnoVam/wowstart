@@ -1,0 +1,107 @@
+.business{
+    padding: 43px 0 0 0;
+    position: relative;
+    .triangle1{
+        border-bottom: 70px solid yellow;
+        border-left: 45px solid transparent;
+        border-right: 55px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        top: 285px;
+        left: 0;
+        transform: rotate(-23deg);
+    }
+    .triangle2{
+        border-bottom: 90px solid #E1E1E1;
+        border-left: 45px solid transparent;
+        border-right: 30px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        bottom: 98px;
+        left: 249px;
+        transform: rotate(88deg);
+    }
+    .triangle3{
+        border-bottom: 111px solid #FF5784;
+        border-left: 45px solid transparent;
+        border-right: 90px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        top: 238px;
+        left: 496px;
+        transform: rotate(12deg);
+    }
+    .triangle4{
+        border-bottom: 115px solid #00D5FF;
+        border-left: 70px solid transparent;
+        border-right: 67px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        bottom: 238px;
+        right: 376px;
+        transform: rotate(-54deg);
+    }
+    .triangle5{
+        border-bottom: 40px solid yellow;
+        border-left: 20px solid transparent;
+        border-right: 33px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        top: 193px;
+        right: 16px;
+        transform: rotate(9deg);
+    }
+    .triangle6{
+        border-bottom: 56px solid #E1E1E1;
+        border-left: 33px solid transparent;
+        border-right: 33px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        bottom: 58px;
+        right: 356px;
+        transform: rotate(90deg);
+    }
+    .triangle7{
+        border-bottom: 75px solid #E1E1E1;
+        border-left: 33px solid transparent;
+        border-right: 33px solid transparent;
+        overflow: hidden;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: rotate(-90deg);
+    }
+    &__title{
+        margin-bottom: 51px;
+        position: relative;
+        margin-left: 26px;
+        &::before{
+            content: '';
+            display: block;
+            width: 14px;
+            height: 57px;
+            background: #01D4FF;
+            position: absolute;
+            top: 0;
+            left: -26px;
+        }
+    }
+    &__cards{
+        margin-bottom: 158px;
+        @media (max-width: 1165px){
+            min-height: 100%;
+            li{
+                padding: 10px 10px 20px 10px;
+                margin: 0 15px;
+            }
+        }
+        @media (max-width: 767px){
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            li{
+                min-width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+}
